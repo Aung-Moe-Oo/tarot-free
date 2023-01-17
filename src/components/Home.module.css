@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.hero {
+  position: relative;
+  height: 100%;
+}
+.hero h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  text-shadow: 2px 2px 14px rgb(0, 0, 0);
+}
+.hero img {
+  position: relative;
+  object-fit: cover;
+  opacity: 0.5;
+  width: 100vw;
+  height: 60vh;
+}
+.intro {
+  padding: 1rem;
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.desc {
+  flex: 1;
+  padding: 1rem;
+  letter-spacing: 0.9px;
+}
+.container h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.reading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0;
+}
+.reading img {
+  width: 100px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.reading button {
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  margin: 2rem 0;
+}
+.reading button::before {
+  content: "*";
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  animation: rotate 1s ease-in infinite;
+}
+.reading button::after {
+  content: "*";
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  animation: rotate 2s ease-in infinite;
+}
+@keyframes rotate {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cardContainer {
+  width: calc(70vw);
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+  }
+}

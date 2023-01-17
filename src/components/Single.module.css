@@ -1,0 +1,40 @@
+.container {
+  background: #191970;
+  height: 100%;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+}
+.images {
+  position: relative;
+}
+img {
+  margin: 0 auto;
+  width: 200px;
+  height: 300px;
+}
+h5 {
+  text-align: center;
+}
+.desc,
+.meaning {
+  padding: 1rem;
+  letter-spacing: 1px;
+}
+.desc h2,
+.meaning h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  padding: 5px 15px;
+  border: 1px solid #fff;
+}
